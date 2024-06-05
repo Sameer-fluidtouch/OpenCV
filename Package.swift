@@ -4,8 +4,8 @@
 
 import PackageDescription
 
-let version = "v1.0.0"
-let checksum = "a11a82a102a9a7529b1d84abf73d8573ab0ffedd1a10343ab847affb6dc4fbd1"
+let version = "v2.0.0"
+let checksum = "cb3f35111215b27d0197bf498a0dbee38e92c983029702ec3f0d69cbaf88823f"
 
 let package = Package(
     name: "OpenCV",
@@ -19,7 +19,7 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(name: "opencv2",
-                      url: "https://github.com/AkshayFT/OpenCV/releases/download/\(version)/opencv2.xcframework.zip",
+                      url: "https://github.com/Sameer-fluidtouch/OpenCV/releases/download/\(version)/opencv2.xcframework.zip",
                       checksum: checksum),
         .target(
             name: "opencv2-dependencies",
