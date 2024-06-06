@@ -4,8 +4,8 @@
 
 import PackageDescription
 
-let version = "v4.0.0"
-let checksum = "76f68f5efbbc636e05835a944c0f4301b9c281473ffeb13750331d536c4fc562"
+let version = "v5.0.0"
+let checksum = "35ef6db3024caae73f16eb22769c09bcdda6543ad00ec1621d09a0bd3200f8ff"
 
 let package = Package(
     name: "OpenCV",
@@ -23,6 +23,7 @@ let package = Package(
                       checksum: checksum),
         .target(
             name: "opencv2-dependencies",
+            exclude: ["Info.plist"],
             linkerSettings: [
                 .linkedFramework("AVFoundation"),
                 .linkedFramework("CoreImage"),
