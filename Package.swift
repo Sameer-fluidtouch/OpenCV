@@ -23,7 +23,6 @@ let package = Package(
                       checksum: checksum),
         .target(
             name: "opencv2-dependencies",
-            exclude: ["Info.plist"],
             linkerSettings: [
                 .linkedFramework("AVFoundation"),
                 .linkedFramework("CoreImage"),
